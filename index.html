@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Cookie Consent</title>
+</head>
+<body>
+   <h1>Cookie Consent</h1>
+   <section class="container">
+<section class="cross-btn-and-cookie-icon-wrapper">
+   <i class="fa-duotone fa-solid fa-cookie-bite"></i>
+      <button class="btn">
+      <i class="fa-solid fa-xmark"></i>
+      </button>
+</section>
+<section class="content-text">
+   <p>We use cookies to improve your user exprience.</p>
+</section>
+<section class="btn-wrapper">
+<button class="accept-btn">Accept all cookies</button>
+</section>
+   </section>
+   <script>
+      const btn = document.querySelector(".accept-btn")
+      const container= document.querySelector(".container")
+      const xmark= document.querySelector(".btn")
+
+
+      btn.addEventListener("click", ()=>{
+         container.classList.add("active")
+       
+
+      })
+      xmark.addEventListener("click", ()=>{
+         container.classList.add("active")
+
+
+         })
+   </script>
+</body>
+</html>
